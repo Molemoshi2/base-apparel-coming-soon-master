@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Josefin Sans, sans serif;
+}
+.main-container {
+    display: flex;
+}
+.logo {
+    margin-bottom: 5rem;
+}
+.child {
+    padding-top: 3.5rem;
+    background-image: url('/images/bg-pattern-desktop.svg');
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+.myH1 {
+    margin-top: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    color:hsl(0, 36%, 70%)
+}
+h1{
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 15px;
+    color: hsl(0, 6%, 24%);
+
+}
+.paragraph {
+    margin-top: 2rem;
+    color: hsl(0, 36%, 70%);
+    line-height: 1.5;
+}
+form {
+    margin-top: 2rem;
+    color: hsl(0, 81%, 86%);
+    display: flex;
+    width: 400px;
+    height: 50px;
+    align-items: center;
+    border-radius: 40px;
+    border: 1px solid hsl(0, 36%, 70%);
+    margin-bottom: 1rem;
+    
+}
+
+form label  {
+    flex: 1;
+    padding: 20px 30px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+}
+form label input{
+    outline: 0;
+    border: 0;
+}
+form input::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+ 
+.main-container2{
+    position: relative;
+}
+/*Making my button move from left to right*/
+@keyframes TransitionIN {
+    from{
+        margin-right: 100px;
+    }
+    to{
+        right: 0;
+    }
+}
+
+button{
+    animation: TransitionIN 1s;
+    width: 5rem;
+    height: 50px;
+    border-radius: 2rem;
+    background-image:linear-gradient(135deg, hsl(0,80%,86%),hsl(0,74%,74%));
+    border: none;
+    color: white;
+    font-size: x-large;
+    cursor: pointer;      
+    
+}
+.error {
+    display: none;
+}
+/*footer*/
+footer {
+    margin-top: 5rem;
+}
